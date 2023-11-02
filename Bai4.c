@@ -1,10 +1,19 @@
 #include <stdio.h>
 
-int main(){
-    char a1 = 90;
-    char a2 = 'a';
+int main() {
+
+  int i = 0;
+
+  while (i <= 9) {
+    // Figure out how to skip the print of 5 here
     
-    printf("%c \n",a1);
-    printf("%d",a1);
-    return 0;
+    i++;
+    if ( i == 5)
+    {
+      continue;
+    }
+    
+    printf("%d\n", i);
+    
+  }
 }

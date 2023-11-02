@@ -3,10 +3,15 @@
 
 int main()
 {
-	char ch1 = 125, ch2 = 4;
-	ch1 = ch1 + ch2;
-	printf("%d\n", ch1);
-	printf("%c\n", ch1  );
+	char ch1 = 120;
+	int n = 12;
+	for ( int i = 0; i < n; i++)
+	{
+		printf("%d\t", ch1);
+		printf("%c\n", ch1);
+
+		ch1 += 1;
+	}
 	return 0;
 }
 

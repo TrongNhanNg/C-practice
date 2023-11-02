@@ -1,7 +1,7 @@
 #include<stdio.h>
  
 
-// Number of elements in array
+// Number of elements in array and sum of 2x2 matrix
 
 
 int main() {

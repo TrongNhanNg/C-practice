@@ -17,7 +17,7 @@ int main() {
   double y = 0;
 
   printf("At the start, our target float b is:%f\n", b);
-  printf("At the start, our target double y is:%f\n", y);
+  printf("At the start, our target double y is:%lf\n", y);
 
 // If you were curious about what this code is doing, it is looping through and adding to our variables b and y a set amount of 0.1 on each loop
   for(int i = 0; i < numOfLoops; i++)
@@ -27,6 +27,6 @@ int main() {
   }
 
   printf("At the end, our target float b is:%f\n", b);
-  printf("At the end, our target double y is:%f\n", y);
-
+  printf("At the end, our target double y is:%lf\n", y);
+// =>>>> Double are more percise
 }
