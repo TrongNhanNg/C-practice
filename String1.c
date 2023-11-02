@@ -9,6 +9,7 @@ int main() {
   char s2[len1];
   char s3[]= {'W','o','r','l','d','\0'}; //size = 6: 5 ki tu va 1 ki tu null
   len1 = strlen(s1) ;
+  printf("len1: %d\n", len1);
   printf("%d\n", len1);
 
   strcpy(s2,s1);

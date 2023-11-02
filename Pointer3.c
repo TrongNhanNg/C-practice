@@ -11,6 +11,7 @@ int main()
 
 	// Get the number of elements for the array
 	printf("Enter number of elements:");
+	fflush(stdout);
 	scanf("%d",&n);
 	printf("Entered number of elements: %d\n", n);
 
