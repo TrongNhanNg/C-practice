@@ -1,23 +1,34 @@
 #include<stdio.h>
 #include<string.h>
 
-int main() {
+void remove_firstandlast(char * dst, const char * src)
+{
+  int src_len = strlen(src);
+  printf("Lenght of uncut: %d\n",src_len);
+  printf("src is: %s\n",src);
+  for(int i =0; i < src_len; i++)
+  {
+    printf("src at %d : %c \n", i, src[i]);
+  }
+  printf("Processing.....\n");
+
+  strcpy(dst, src +1); // cut the first char 
+  dst[strlen(dst)-1] = '\0'; // cut the last char
+  int dst_len = strlen(dst);
+  printf("Lenght of cut dst: %d\n", dst_len);
+  for(int i =0; i < dst_len; i++)
+  {
+    printf("dst cutted at %d : %c \n", i, dst[i]);
+  }
   
+}
 
-  int len1, len2, len3;
-  char s1[] = "Hello";
-  char s2[len1];
-  char s3[]= {'W','o','r','l','d','\0'}; //size = 6: 5 ki tu va 1 ki tu null
-  len1 = strlen(s1) ;
-  printf("len1: %d\n", len1);
-  printf("%d\n", len1);
+int main() {
+  char color[5] = "green";
+  char result[5];
+  
+  remove_firstandlast(result, color);
 
-  strcpy(s2,s1);
-  printf("%s\n", s2);
-
-  len3 = strlen(s3);
-  printf("len3: %d\n", len3);
-  printf("Size of s3: %d\n", sizeof(s3));
 
 
   return 0;
