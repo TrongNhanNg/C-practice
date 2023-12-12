@@ -7,15 +7,11 @@ struct Person {
 
 int main(void) {
   struct Person person1 = {"Martin", 57};
-  
   struct Person person2 = {"Michelle", 27};
-
   struct Person person3;
   strcpy((person3.name),"Jason");
   person3.age = 17;
 
-
-  
   // Write your code below
   struct Person * person1Pointer = &person1;
   struct Person * person2Pointer = &person2;
